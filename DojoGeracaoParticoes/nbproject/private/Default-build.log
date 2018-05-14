@@ -1,0 +1,11 @@
+mkdir -p ./build
+gcc -c -o build/geracao_particoes.o geracao_particoes.c -I.
+mkdir -p ./build
+gcc -c -o build/cliente.o cliente.c -I.
+mkdir -p ./build
+gcc -c -o build/lista_clientes.o lista_clientes.c -I.
+mkdir -p ./build
+gcc -c -o build/nomes.o nomes.c -I.
+mkdir -p ./build
+gcc -c -o build/test_geracao_particoes.o test_geracao_particoes.c -I.
+gcc -o ./build/main build/geracao_particoes.o build/cliente.o build/lista_clientes.o build/nomes.o build/test_geracao_particoes.o -I.
