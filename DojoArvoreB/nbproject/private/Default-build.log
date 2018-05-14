@@ -1,0 +1,15 @@
+mkdir -p ./build
+gcc -c -o build/arvore_b.o arvore_b.c -I.
+mkdir -p ./build
+gcc -c -o build/cliente.o cliente.c -I.
+mkdir -p ./build
+gcc -c -o build/lista_clientes.o lista_clientes.c -I.
+mkdir -p ./build
+gcc -c -o build/metadados.o metadados.c -I.
+mkdir -p ./build
+gcc -c -o build/no.o no.c -I.
+mkdir -p ./build
+gcc -c -o build/lista_nos.o lista_nos.c -I.
+mkdir -p ./build
+gcc -c -o build/test_arvore_b.o test_arvore_b.c -I.
+gcc -o ./build/main build/arvore_b.o build/cliente.o build/lista_clientes.o build/metadados.o build/no.o build/lista_nos.o build/test_arvore_b.o -I.
